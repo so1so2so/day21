@@ -1,0 +1,18 @@
+{% extends 's.html' %}   指定继承的模块
+{% load mydef %}
+{% block title %}用户管理{% endblock %}  替换模板的内容
+
+{% block connet %}
+    s2的页面 {% zhangneng 1 2 %}
+    {{ '25'|neng:26 }}
+    <ul>
+      {% for foo in li_html %}
+        {% include 's3.html' %}
+      {% endfor %}
+    </ul>
+{#    {{ page_list|safe }}#}
+    {% for page in page_list %}
+    {{ page|safe }}
+    {% endfor %}
+
+{% endblock %}

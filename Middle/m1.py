@@ -7,7 +7,8 @@ class Row1(MiddlewareMixin):
     def process_request(self,request):
         print "第一个中间件"
 
-
+    def process_repronse(self,response,requset):
+        pass
 class Row2(MiddlewareMixin):
     def process_request(self,request):
         print "第2个中间件"

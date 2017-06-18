@@ -6,4 +6,4 @@ from django.core.signals import request_started
 def callback(sender, **kwargs):
         print("zhang_callback")
         print(sender, kwargs)
-request_started.connect(callback)
+# request_started.connect(callback)

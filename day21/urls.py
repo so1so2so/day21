@@ -14,6 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url, include
+from  app02 import views
 urlpatterns = [
     url(r'^app01/', include('app01.urls')),
+    url(r'^app02', views.csrf),
 ]

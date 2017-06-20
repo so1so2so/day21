@@ -19,4 +19,5 @@ urlpatterns = [
     url(r'^app01/', include('app01.urls')),
     url(r'^app02', views.csrf),
     url(r'^fm', views.fm),
+    url(r'^sql/', views.sqltest),
 ]

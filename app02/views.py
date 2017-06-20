@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # _*_ coding:utf-8 _*_
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect,HttpResponse
 
 # Create your views here.
 
@@ -43,3 +43,7 @@ def fm(request):
             # print obj.errors.as_json
             print obj.errors
         return redirect('/fm')
+def sqltest(request):
+     a= models.test.objects.filter("XMHB=A4")
+     print a
+     return HttpResponse('sqltest')

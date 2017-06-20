@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 # _*_ coding:utf-8 _*_
 from django.shortcuts import render,HttpResponse
-import docker
-a =docker.Client(base_url="unix://var/run/docker.sock")
-# Create your views here.
+# a =docker.Client(base_url="unix://var/run/docker.sock")
+# # Create your views here.
 li = []
 for i in range(200):
     li.append(i)
